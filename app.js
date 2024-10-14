@@ -45,6 +45,7 @@ let odds = []
 nums.forEach((num) => num % 2 === 1 && odds.push(num));
 console.log('Exercise 11 result:', odds);
 
+
 let fizz = [];
 let buzz = [];
 let fizzbuzz = [];
@@ -65,6 +66,12 @@ const numArrays = [
 	[7, 81, 90]
 ];
 const numlist = [numArrays[3][0], numArrays [3][1], numArrays [3][2]];
+//a better way to solve this is to access the entire last nested array without individualy
+//listing each individual element so the easier and more reliable way to access the last
+//nested array would be:
+//const numList= numArrays[numArrays.length - 1];
+//this way, even if the numArrays get editted, this will ALWAYS print the final array even 
+//if another array gets added 
 console.log('Exercise 13 result:', numlist);
 
 let num = [numArrays[2][1]];
